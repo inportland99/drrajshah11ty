@@ -1,0 +1,131 @@
+/* Typography & Base */
+body {
+  font-family: "Merriweather", Georgia, serif;
+  color: #333;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", Arial, sans-serif;
+  margin: 1.5rem 0 1rem;
+  font-weight: 700;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: #f5f5f5;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-header h1 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.site-nav {
+  margin-top: 0.5rem;
+}
+.site-nav a {
+  margin-right: 1.5rem;
+  font-weight: 600;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #333;
+}
+.site-nav a:hover {
+  color: #0077cc;
+}
+
+/* Content */
+.site-content {
+  padding: 2rem 0;
+  font-size: 1.1rem;
+}
+
+/* Blog post styling */
+.post-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+.site-footer {
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+/* Hero section */
+.hero {
+  background: #f5f5f5;
+  padding: 4rem 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero .tagline {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+/* Intro text */
+.intro {
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 700px;
+}
+
+/* Latest posts */
+.posts {
+  margin: 3rem 0;
+}
+.posts h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+.post-list li {
+  margin-bottom: 2rem;
+}
+.post-list h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.3rem;
+}
+.post-list .post-meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}

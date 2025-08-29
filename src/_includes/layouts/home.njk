@@ -1,0 +1,30 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <div class="hero">
+    <div class="container">
+      <h1>{{ site.title }}</h1>
+      <p class="tagline">{{ site.description }}</p>
+    </div>
+  </div>
+
+  <div class="container intro">
+    <p>
+      Hi, I’m Raj Shah. I help people unlock their brilliance through math, coaching, and storytelling.  
+      On this site you’ll find essays, talks, and projects that bring curiosity and joy to learning.
+    </p>
+  </div>
+
+  <div class="container posts">
+    <h2>Latest Posts</h2>
+    <ul class="post-list">
+      {% for post in collections.posts | reverse | slice(0,3) %}
+        <li>
+          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+          <p class="post-meta">{{ post.date | date("MMMM D, YYYY") }}</p>
+          <p>{{ post.data.description }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
