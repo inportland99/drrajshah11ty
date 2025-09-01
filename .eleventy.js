@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
   eleventyConfig.addPassthroughCopy("src/assets/css");
   eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/CNAME"); // Make sure to copy CNAME file for custom domains
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginNavigation);
@@ -18,7 +19,7 @@ module.exports = function(eleventyConfig) {
       input: "src",
       includes: "_includes",
       layouts: "_includes/layouts",
-      output: "_site"
+      output: "public"
     },
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
