@@ -5,6 +5,9 @@
     "scripts": {
     "start": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
+    "build:sass:prod": "sass src/assets/css:public/static/css --style compressed",
+    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
+    "build:prod": "npm run build:eleventy:prod & npm run build:sass:prod",
     "dev": "npm run start",
     "import:wp": "node scripts/import-wp.js ./wordpress-export.xml"
     },
