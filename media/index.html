@@ -605,6 +605,28 @@
                 height: auto;
             }
         </style>
+
+        <style>
+            /* Responsive embed wrapper: maintains aspect ratio and allows taller ratios if desired */
+            .wp-block-embed .wp-block-embed__wrapper {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 default; increase to ~75% for taller look */
+                height: 0;
+                overflow: hidden;
+            }
+
+            .wp-block-embed .wp-block-embed__wrapper iframe,
+            .wp-block-embed-youtube iframe,
+            .wp-block-embed-vimeo iframe,
+            .wp-block-embed iframe {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        </style>
     </head>
     <body class="wp-singular page-template page-template-template-full-width page-template-template-full-width-php page page-id-249 wp-embed-responsive wp-theme-genesis wp-child-theme-showcase-pro custom-header header-full-width full-width-content genesis-breadcrumbs-hidden genesis-footer-widgets-hidden" itemscope itemtype="https://schema.org/WebPage">
         <div class="site-container">
@@ -656,11 +678,18 @@
                                 <div class="entry-content" itemprop="text">
                                     <figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
                                         <div class="wp-block-embed__wrapper">
-                                            <iframe title="Using Video Game Principles to Improve Math Scores | Raj Shah | TEDxHilliard" width="500" height="281" src="https://www.youtube.com/embed/HmsA0-ZvbfU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                            <iframe title="Using Video Game Principles to Improve Math Scores | Raj Shah | TEDxHilliard" height="600" src="https://www.youtube.com/embed/HmsA0-ZvbfU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                         </div>
                                     </figure>
-                                    <h3 class="wp-block-heading">Making Math Moments that Matter podcast with Kyle Pearce &amp;Jon Orr</h3>
-                                    <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/9159329/height/360/theme/legacy/thumbnail/yes/direction/backward/" height="360" width="100%" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""></iframe>
+                                    <h3 class="wp-block-heading">Listen: Podcast Appearances</h3>
+                                    <ul>
+
+                                        <li><a href="https://www.maththerapypodcast.com/1734392/episodes/17997758-why-math-sucks-and-how-to-fix-it-w-raj-shah">Math Therapy Podcast w/ Vanessa Vakharia</a></li>
+                                        <li><a href="https://makemathmoments.com/episode18/">Making Math Moments that Matter w/ Kyle Pearce &amp;Jon Orr</a></li>
+                                        <li><a href="https://debatemathpod.buzzsprout.com/1882830/episodes/9983704-debate-2-stop-making-students-memorize-math">Debate Math - Stop Making Students Memorize</a></li>
+                                        <li><a href="https://debatemathpod.buzzsprout.com/1882830/episodes/11780327-debate-12-what-is-the-purpose-of-math-class">Debate Math - What is the Purpose of Math Class</a></li>
+                                        <li><a href="https://www.youtube.com/watch?v=M6zfemHpWLQ">Beyond Hope Project - Unlocking Life’s Equations: Personal Growth Through Math</a></li>
+                                    </ul>
                                     <h3 class="wp-block-heading">Media Reel</h3>
                                     <figure class="wp-block-embed-vimeo wp-block-embed is-type-video is-provider-vimeo wp-embed-aspect-16-9 wp-has-aspect-ratio">
                                         <div class="wp-block-embed__wrapper">
